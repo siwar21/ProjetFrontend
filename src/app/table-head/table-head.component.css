@@ -1,0 +1,34 @@
+.my-table-row{
+    display: flex;
+    text-align:auto;
+    color: #696969;
+    
+}
+
+.my-table-row > th {
+    width: 1200%;    
+    flex-basis: auto;
+    border-collapse : separate;
+    border-spacing : 10px;
+}
+.my-head-element{
+    width: 1200%;    
+    flex-basis: auto;
+    text-align:left;    
+}
+
+
+.my-svg{
+    width: 20rem !important;
+}
+
+tr{
+    width: 112% !important;
+}
+
+td{
+    width: 400px;
+    text-align:justify;
+    display: flex;
+    flex-basis: auto;
+  }

@@ -1,0 +1,12 @@
+.my-table-row{
+    display: flex;
+}
+
+.my-table-row > td {
+    width: 100%;
+    text-align: center;
+}
+
+.my-svg{
+    width: 20rem !important;
+}

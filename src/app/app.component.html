@@ -1,0 +1,81 @@
+<div class="my-container">
+  <app-tollbar></app-tollbar>
+  <table class="my-table-body">
+    <app-table-head [selected]="selected"></app-table-head>
+    <app-table-body [users]="users" (setChecked)="setChecked($event)"></app-table-body>
+  </table>
+</div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addUser" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+<div class="modal fade" id="addUser" tabindex="-1" aria-labelledby="addUser" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addUser">New user</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <div class="row">
+              <div class="col-6">
+                <label for="recipient-name" class="col-form-label">Name:</label>
+                <input name="name" [(ngModel)]="newUser.name" [value]="newUser.name" type="text" class="form-control" id="recipient-name">            
+              </div>
+              <div class="col-6">
+                <label for="recipient-name" class="col-form-label">Phone:</label>
+                <input name="phone" [(ngModel)]="newUser.phone" [value]="newUser.phone" type="text" class="form-control" id="recipient-name">            
+              </div>
+            </div>  
+            <div class="row">
+              <div class="col-6">
+                <label for="recipient-name" class="col-form-label">ssn:</label>
+                <input name="ssn" [(ngModel)]="newUser.ssn" [value]="newUser.ssn" type="text" class="form-control" id="recipient-name">            
+              </div>
+              <div class="col-6">
+                <label for="recipient-name" class="col-form-label">dob:</label>
+                <input name="dob" [(ngModel)]="newUser.dob" [value]="newUser.dob" type="date" class="form-control" id="recipient-name">            
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <label for="recipient-name" class="col-form-label">hired:</label>
+                <input name="hired" [(ngModel)]="newUser.hired" [value]="newUser.hired" type="date" class="form-control" id="recipient-name">            
+              </div>
+              <div class="col-6">
+                <label for="recipient-name" class="col-form-label">cdl:</label>
+                <input name="cdl" [(ngModel)]="newUser.cdl" [value]="newUser.cdl" type="text" class="form-control" id="recipient-name">            
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <label for="recipient-name" class="col-form-label">state:</label>
+                <input name="state" [(ngModel)]="newUser.state" [value]="newUser.state" type="text" class="form-control" id="recipient-name">            
+              </div>
+              <div class="col-6">
+                <label for="recipient-name" class="col-form-label">cdlExp:</label>
+                <input name="cdlExp" [(ngModel)]="newUser.cdlExp" [value]="newUser.cdlExp" type="text" class="form-control" id="recipient-name">            
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <label for="recipient-name" class="col-form-label">medicalExp:</label>
+                <input name="medicalExp" [(ngModel)]="newUser.medicalExp" [value]="newUser.medicalExp" type="text" class="form-control" id="recipient-name">            
+              </div>
+              <div class="col-6">
+                <label for="recipient-name" class="col-form-label">mvrExp:</label>
+                <input name="mvrExp" [(ngModel)]="newUser.mvrExp" [value]="newUser.mvrExp" type="text" class="form-control" id="recipient-name">            
+              </div>
+            </div>
+            
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" (click)="addUser()">Save user</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+.my-search-bar{
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.my-icon {
+    width: 32px;
+    border: 1px solid #e4dede;
+    padding: .3em;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.my-search-icon > svg{
+    fill: lightgray;
+}
+
+.my-search-bar-input{
+    flex-grow: 1;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 100%;
+}
+.my-search-bar-input > input{
+    width:100%;
+    height: 25px;
+    border: none; 
+    border-radius: 5px;
+}
+
+.my-plus-icon{
+    fill: lightblue;
+    cursor: pointer;
+}
